@@ -1,7 +1,6 @@
 # semana-1-55
 
-
-![](https://pandao.github.io/editor.md/images/stars/editormd-logo-180x180.png)
+![](https://img.shields.io/github/stars/DeisyK/editor.md.svg)
 
 ## Proyecto Spring Semana 1 UTP
 

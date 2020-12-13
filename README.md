@@ -1,6 +1,6 @@
 # semana-1-55
 
-![](https://img.shields.io/github/stars/DeisyK/semana-1-55/editor.md.svg)
+![](https://img.shields.io/github/stars/semana-1-55/editor.md.svg)
 
 ## Proyecto Spring Semana 1 UTP
 

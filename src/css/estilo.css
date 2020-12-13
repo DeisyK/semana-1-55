@@ -1,0 +1,45 @@
+/* Estilos generales*/
+@font-face{
+    font-family: 'Adios';
+    src: url(/src/fonts/Adios.ttf) format("truetype"),
+    url(/src/fonts/Adios.eot) format("embedded-opentype"),
+    url(/src/fonts/Adios.woff) format("woff");
+}
+
+h2{
+    text-align: center;
+    font-family: 'Adios';
+    font-size: 50px;
+}
+/* Estilos de seccion cabecera*/
+
+/* Estilos de seccion servicios*/
+
+/* Estilos de seccion noticias*/
+.noticias{
+    border: 5px black solid;
+    background: url(/src/imagenes/fondoNoticia.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;    
+}
+.tituloNoticias{
+    color:white;
+}
+.contenedorNoticias{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.noticia{
+    height: 200px;
+    width: 200px;
+    margin: 10% 1%;
+    border: 5px white solid;
+    border-radius: 10%;
+}
+/* Estilos de seccion equipo*/
+
+/* Estilos de seccion pie del sitio*/

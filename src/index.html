@@ -19,12 +19,27 @@
             <img src="imagenes/banner.png" class="img-fluid" alt="imagen banner">
         </div>
         <div>
-            <nav id="menu" class="navbar navbar-dark bg-dark">
-                <a href="#header" class="badge badge-pill badge-dark">Inicio</a>
-                <a href="#services" class="badge badge-dark">Servicios</a>
-                <a href="#news" class="badge badge-dark">Noticias</a>
-                <a href="#team" class="badge badge-dark">Team</a>
-                <a href="#footer" class="badge badge-dark">Pie de pagina</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Animes DJK</a>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#service">Servicios</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#news">Noticias</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#footer">Pie de pagina</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -66,7 +81,7 @@
         </div>
     </div>
 
-    <!--Seccion noticias realizado por: -->
+    <!--Seccion noticias realizado por: Deisy --> 
     <div id="app">
         <div id="news" class="noticias">
             <div class="tituloNoticias">
@@ -74,77 +89,63 @@
                     Ultimas Noticias
                 </h2>
             </div>
-            <div class="buscarNoticia">
-                <button id="botonBuscar" class="btn btn-success" type="button" @click="agregarNoticia">
-                    Buscar
-                </button>
-            </div>
             <div class="contenedorNoticias">
-                <!--seccion noticias anime-->
-                <div>
-                    <div class="noticia">
-                        <div class="titularNoticia">
-                            {{noticiaAnime1Titular}}
-                        </div>
-                        <div class="imagenNoticia">
-                            <!--img src="{{noticiaAnime1Imagen}}" class="img-fluid img-fluid img-thumbnail"
-                                alt="Imagen noticia">-->
-                        </div>
-                        <div class="textoNoticia">
-                            <p>{{noticiaAnime1Descripcion}}</p>
-                            <p>Fecha: {{noticiaAnime1Fecha}}</p>
-                            <!--<a href="{{noticiaAnime1Url}}">Seguir Leyendo..</a>-->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" v-bind:src="noticiaAnime1Imagen" alt="Imagen Noticia 1">
+                            <div class="card-body">
+                                <h5 class="card-title">{{noticiaAnime1Titular}}</h5>
+                                <p class="card-text">{{noticiaAnime1Descripcion}}</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Fecha: {{noticiaAnime1Fecha}}</small>
+                                <p> <a v-bind:href="noticiaAnime1Url" class="link-info"> Seguir Leyendo..</a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="noticia">
-                        <div class="titularNoticia">
-                            {{noticiaAnime2Titular}}
-                        </div>
-                        <div class="imagenNoticia">
-                            <!--<img src="{{$data.noticia1Imagen}}" class="img-fluid img-fluid img-thumbnail"
-                                alt="Imagen noticia">-->
-                        </div>
-                        <div class="textoNoticia">
-                            <p>{{noticiaAnime2Descripcion}}</p>
-                            <p>Fecha: {{noticiaAnime2Fecha}}</p>
-                            <!--<a href="{{noticiaAnime1Url}}">Seguir Leyendo..</a>-->
-                        </div>
-                    </div>
-                </div>
-                <!--seccion noticias manga-->
-                <div>
-                    <div class="noticia">
-                        <div class="titularNoticia">
-                            {{noticiaManga1Titular}}
-                        </div>
-                        <div class="imagenNoticia">
-                            <!--<img src="{{$data.noticia1Imagen}}" class="img-fluid img-fluid img-thumbnail"
-                                alt="Imagen noticia">-->
-                        </div>
-                        <div class="textoNoticia">
-                            <p>{{noticiaManga1Descripcion}}</p>
-                            <p>Fecha: {{noticiaManga1Fecha}}</p>
-                            <!--<a href="{{noticiaAnime1Url}}">Seguir Leyendo..</a>-->
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" v-bind:src="noticiaAnime2Imagen" alt="Imagen Noticia 2">
+                            <div class="card-body">
+                                <h5 class="card-title">{{noticiaAnime2Titular}}</h5>
+                                <p class="card-text">{{noticiaAnime2Descripcion}}</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Fecha: {{noticiaAnime2Fecha}}</small>
+                                <p> <a v-bind:href="noticiaAnime2Url" class="link-info"> Seguir Leyendo..</a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="noticia">
-                        <div class="titularNoticia">
-                            {{noticiaManga2Titular}}
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" v-bind:src="noticiaManga1Imagen" alt="Imagen Noticia 3">
+                            <div class="card-body">
+                                <h5 class="card-title">{{noticiaManga1Titular}}</h5>
+                                <p class="card-text">{{noticiaManga1Descripcion}}</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Fecha: {{noticiaManga1Fecha}}</small>
+                                <p> <a v-bind:href="noticiaManga1Url" class="link-info"> Seguir Leyendo..</a></p>
+                            </div>
                         </div>
-                        <div class="imagenNoticia">
-                            <!--<img src="{{$data.noticia1Imagen}}" class="img-fluid img-fluid img-thumbnail"
-                                alt="Imagen noticia">-->
-                        </div>
-                        <div class="textoNoticia">
-                            <p>{{noticiaManga2Descripcion}}</p>
-                            <p>Fecha: {{noticiaManga2Fecha}}</p>
-                            <!--<a href="{{noticiaAnime1Url}}">Seguir Leyendo..</a>-->
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" v-bind:src="noticiaManga2Imagen" alt="Imagen Noticia 4">
+                            <div class="card-body">
+                                <h5 class="card-title">{{noticiaManga2Titular}}</h5>
+                                <p class="card-text">{{noticiaManga2Descripcion}}</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Fecha: {{noticiaManga2Fecha}}</small>
+                                <p> <a v-bind:href="noticiaManga1Url" class="link-info"> Seguir Leyendo..</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!--Seccion equipo realizado por: -->
     <div>

@@ -52,48 +52,18 @@ h2{
 }
 .tituloNoticias{
     color:white;
+    height: 15%;
 }
-.buscarNoticia{
-    margin: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .contenedorNoticias{
-
+    height: 85%;
     display: flex;
-    justify-content: space-evenly;
-}
-
-.noticia{
-    
-    height: 400px;
-    width: 350px;
-    margin: 10% 1%;
-    border-radius: 10%;
-    background-color:rgba(249, 225, 242,60%);
-}
-.titularNoticia{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 4%;
     margin-right: 4%;
-    height: 15%;
-    border: 5px green solid;
-    font-style: oblique;
-    font-weight: bold;
-    text-align: center;
+    margin-bottom: 5%;
+
 }
-.imagenNoticia{
-    height: 35%;
-    border: 5px blueviolet solid;
-}
-.textoNoticia{
-    margin-left: 1%;
-    margin-right: 1%;
-    height: 50%;
-    border: 5px pink solid;
-    font-size: 10pt;
-}
+
 /* Estilos de seccion equipo*/
 #team{
     display: flex;

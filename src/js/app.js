@@ -21,7 +21,7 @@ const app = new Vue({
         noticiaManga2Imagen: 'imagenes/404.jpg',
         noticiaManga2Url: '',
         noticiaManga2Fecha: '2020'
-    },
+    },   
     methods: {
         async agregarNoticia() {            
             let noticiasAnime = await fetch("https://jikan1.p.rapidapi.com/anime/16498/news", {
@@ -75,6 +75,12 @@ const app = new Vue({
                 this.noticiaManga2Fecha=datosNoticiaManga[5]['date']
                 this.noticiaManga2Url=datosNoticiaManga[5]['url']
             }
+            else{
+                
+            }
         }
+    },
+    created: function(){
+        this.agregarNoticia()
     }
 })

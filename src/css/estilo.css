@@ -14,6 +14,32 @@ h2{
 /* Estilos de seccion cabecera*/
 
 /* Estilos de seccion servicios*/
+#services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height: 401px;
+}
+
+#servicName{
+    text-align: center;
+    line-height: 25px;
+    font-style: oblique;
+    font-size: 45px;
+}
+
+.servicio{
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    padding: 5px;
+    border: 2px black solid;
+    line-height: 50px;
+}
+
+
 
 /* Estilos de seccion noticias*/
 .noticias{
@@ -69,5 +95,41 @@ h2{
     font-size: 10pt;
 }
 /* Estilos de seccion equipo*/
+#team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height: 400px;
+}
+
+#pictureName{
+    line-height: 4ch;    
+}
+
+#integName{
+    text-align: center;
+    line-height: 1.5ch;
+    font-style: oblique;
+    font-size: 35px;
+}
+
+.integrante{
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    padding: 5px;
+    border: 5px black solid;
+    line-height: 50px;
+    
+}
+
+h3{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.2ch;
+}
 
 /* Estilos de seccion pie del sitio*/

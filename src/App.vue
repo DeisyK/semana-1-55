@@ -3,11 +3,11 @@
     <barra-navegacion></barra-navegacion>
     <banner-servicio></banner-servicio>
     <seccion-noticias></seccion-noticias>
-    
+
     <!--Seccion equipo -->
     <div id="team" class="equipo">
       <div>
-        <h2>Team</h2>
+        <h2>Equipo</h2>
       </div>
       <div>
         <div class="container-fluid">
@@ -19,7 +19,8 @@
         </div>
       </div>
     </div>
-    <seccion-footer></seccion-footer>
+
+    <seccion-footer :member="Team"></seccion-footer>
   </div>
 </template>
 
@@ -46,25 +47,28 @@ export default {
           codigo: 1,
           nombre: "Kevin Andres Balcazar Meza",
           descripcion:
-            "Vive en Monteria, estundiante de programacion (Amateur), su comida favorita es el perro suizo, su pelicula favorita es la saga predator, su nickname es Clark Kent",
+            "Vive en Montería, estudiante de programación (Amateur), su comida favorita es el perro suizo, su película favorita es la saga predator, su nickname es Clark Kent",
           rol: "Desarrollador Frontend (Header Y Footer)",
           image: "https://i.imgur.com/h1ibIMZ.jpg",
+          correo: "kevin_balcazar9@hotmail.com",
         },
         {
           codigo: 2,
           nombre: "Deisy Katherine Pineda Araque",
           descripcion:
-            "Vive en Bogota, estundiante de ing. mecatronica, su comida favorita es pizza mexicana y lasaña, su pelicula favorita es los 13 fantasmas, su nickname es Kathe o Kata",
+            "Vive en Bogotá, estudiante de ing. mecatrónica, su comida favorita es pizza mexicana y lasaña, su película favorita es los 13 fantasmas, su nickname es Kathe o Kata",
           rol: "Desarrollador Frontend (Noticias)",
           image: "https://i.imgur.com/zAoJz8Y.jpg",
+          correo: "kte_0330@hotmail.com",
         },
         {
           codigo: 3,
           nombre: "Jhon Jairo Sanabria Rodriguez",
           descripcion:
-            "Vive en Bogota, ing electronico, su comida favorita es la pasta, wraps y sushi, su pelicula favorita es matrix, su nickname es JJ",
+            "Vive en Bogotá, ing electrónico, su comida favorita es la pasta, wraps y sushi, su película favorita es Matrix, su nickname es JJ",
           rol: "Desarrollador Frontend (Equipo)",
           image: "https://i.imgur.com/FPDZUXl.jpg",
+          correo: "auyeco@hotmail.com",
         },
       ],
     };
@@ -72,19 +76,22 @@ export default {
 };
 </script>
 <style>
-@font-face{
-    font-family: 'Adios';
-    src: url(https://drive.google.com/file/d/1gRG16Mpdowx-KkLLtH72Ak2OzEMb_zGh/view?usp=sharing) format("truetype"),
-    url(https://drive.google.com/file/d/1VLVV5ASyAcutypYFvbSZm30w3P7wdLBj/view?usp=sharing) format("embedded-opentype"),
-    url(https://drive.google.com/file/d/1qKIx4QLLOlIK-rAbQtMJg0MQ76BU3xAG/view?usp=sharing) format("woff");
+@font-face {
+  font-family: "Adios";
+  src: url(https://drive.google.com/file/d/1gRG16Mpdowx-KkLLtH72Ak2OzEMb_zGh/view?usp=sharing)
+      format("truetype"),
+    url(https://drive.google.com/file/d/1VLVV5ASyAcutypYFvbSZm30w3P7wdLBj/view?usp=sharing)
+      format("embedded-opentype"),
+    url(https://drive.google.com/file/d/1qKIx4QLLOlIK-rAbQtMJg0MQ76BU3xAG/view?usp=sharing)
+      format("woff");
 }
 
-h2{
-    margin-top: 1%;
-    text-align: center;
-    font-family: 'Adios';
-    font-size: 50px;
-    font-weight: bold;
+h2 {
+  margin-top: 1%;
+  text-align: center;
+  font-family: "Adios";
+  font-size: 50px;
+  font-weight: bold;
 }
 /* Estilos de seccion noticias*/
 .noticias {

@@ -13,7 +13,7 @@
                     <a class="nav-link" href="#news">Noticias</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#team">Team</a>
+                    <a class="nav-link" href="#team">Equipo</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#footer">Pie de pagina</a>

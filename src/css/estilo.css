@@ -7,9 +7,16 @@
 }
 
 h2{
+    margin-top: 1%;
     text-align: center;
     font-family: 'Adios';
     font-size: 50px;
+    font-weight: bold;
+}
+.tituloNav{
+    text-align: center;
+    font-family: 'Adios';
+    font-size: 30px;
 }
 /* Estilos de seccion cabecera*/
 
@@ -65,41 +72,8 @@ h2{
 }
 
 /* Estilos de seccion equipo*/
-#team{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-    height: 400px;
-}
-
-#pictureName{
-    line-height: 4ch;    
-}
-
-#integName{
-    text-align: center;
-    line-height: 1.5ch;
-    font-style: oblique;
-    font-size: 35px;
-}
-
-.integrante{
-    height: 350px;
-    width: 350px;
-    text-align: center;
-    padding: 5px;
-    border: 5px black solid;
-    line-height: 50px;
-    
-}
-
-h3{
-    font-style: italic;
-    font-size: 15px;
-    font-weight: 200;
-    line-height: 1.2ch;
+.equipo{
+    margin-bottom: 1%;
 }
 
 /* Estilos de seccion pie del sitio*/

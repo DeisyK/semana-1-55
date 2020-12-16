@@ -1,9 +1,11 @@
 <template>
   <div id="app">
+    
     <barra-navegacion></barra-navegacion>
+    <header>
     <banner-servicio></banner-servicio>
+    </header>
     <seccion-noticias></seccion-noticias>
-
     <!--Seccion equipo -->
     <div id="team" class="equipo">
       <div>
@@ -40,6 +42,7 @@ export default {
     TeamCard,
     SeccionNoticias,
   },
+  /* todos los datos del equipo en formato json*/
   data() {
     return {
       Team: [

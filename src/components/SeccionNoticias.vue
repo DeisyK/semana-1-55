@@ -139,6 +139,7 @@ export default {
   },
   methods: {
     async agregarNoticia() {
+      /*Implementacion api por anime y metodo fetch*/
       let noticiasAnime = await fetch(
         "https://jikan1.p.rapidapi.com/anime/16498/news",
         {
@@ -167,7 +168,7 @@ export default {
         this.noticiaAnime2Fecha = datosNoticiaAnime[1]["date"];
         this.noticiaAnime2Url = datosNoticiaAnime[1]["url"];
       }
-
+/* implementacion api por manga */
       let noticiasManga = await fetch(
         "https://jikan1.p.rapidapi.com/manga/2/news",
         {

@@ -28,24 +28,3 @@
         name: "BarraNavegacion"
     }
 </script>
-<style>
-@font-face{
-    font-family: 'Adios';
-    src: url(https://drive.google.com/file/d/1gRG16Mpdowx-KkLLtH72Ak2OzEMb_zGh/view?usp=sharing) format("truetype"),
-    url(https://drive.google.com/file/d/1VLVV5ASyAcutypYFvbSZm30w3P7wdLBj/view?usp=sharing) format("embedded-opentype"),
-    url(https://drive.google.com/file/d/1qKIx4QLLOlIK-rAbQtMJg0MQ76BU3xAG/view?usp=sharing) format("woff");
-}
-
-h2{
-    margin-top: 1%;
-    text-align: center;
-    font-family: 'Adios';
-    font-size: 50px;
-    font-weight: bold;
-}
-.tituloNav{
-    text-align: center;
-    font-family: 'Adios';
-    font-size: 30px;
-}
-</style>

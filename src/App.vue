@@ -96,6 +96,13 @@ h2 {
   font-size: 50px;
   font-weight: bold;
 }
+/* Estilo de barra de navegacion*/
+.tituloNav{
+    text-align: center;
+    font-family: 'Adios';
+    font-size: 30px;
+    font-weight: bold;
+}
 /* Estilos de seccion noticias*/
 .noticias {
   border: 5px black solid;

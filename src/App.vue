@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-    
-    <barra-navegacion></barra-navegacion>
+      <barra-navegacion></barra-navegacion>
     <header>
-    <banner-servicio></banner-servicio>
-    </header>
     <div id="services">
-    <seccion-noticias></seccion-noticias>
+      <banner-servicio></banner-servicio>
     </div>
+    </header>
+    <seccion-noticias></seccion-noticias>
     <!--Seccion equipo -->
     <div id="team" class="equipo">
       <div>
@@ -99,11 +98,11 @@ h2 {
   font-weight: bold;
 }
 /* Estilo de barra de navegacion*/
-.tituloNav{
-    text-align: center;
-    font-family: 'Adios';
-    font-size: 30px;
-    font-weight: bold;
+.tituloNav {
+  text-align: center;
+  font-family: "Adios";
+  font-size: 30px;
+  font-weight: bold;
 }
 /* Estilos de seccion noticias*/
 .noticias {

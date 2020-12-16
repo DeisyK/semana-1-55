@@ -3,7 +3,7 @@
   <footer
     id="footer"
     class="page-footer text-dark pt-4"
-    style="background-color: rgb(246, 229, 236);"
+    style="background-color: rgb(246, 229, 236)"
   >
     <!-- Footer Text -->
     <div class="container-fluid text-center text-md-left">
@@ -23,6 +23,19 @@
             con nuestro propio proyecto personal,ver lo aprendido en
             funcionamiento, con el esfuerzo realizado por cada uno de los
             integrantes del equipo".
+          </p>
+          <p>
+            <a
+              href="https://github.com/DeisyK/semana-1-55/tree/master"
+              class="badge badge-dark text-dark"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-512/github-163-761603.png"
+                alt="Imagen Noticia 2" style="height: 3em; width: 3em;"
+              />
+              Repositorio
+            </a>
           </p>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3" />
@@ -98,8 +111,8 @@
       </div>
     </div>
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-1 bg-dark">
-      © 2020 Copyright: UTP
+    <div class="footer-copyright text-center py-1 bg-dark text-white">
+      2020 Copyright: UTP
     </div>
   </footer>
   <!-- Footer -->

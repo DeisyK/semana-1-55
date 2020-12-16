@@ -95,9 +95,13 @@
             <div class="card-footer">
               <small class="text-muted">Fecha: {{ noticiaManga2Fecha }}</small>
               <p>
-                <a v-bind:href="noticiaManga1Url" class="link-info">
-                  Seguir Leyendo..</a
+                <a
+                  v-bind:href="noticiaManga1Url"
+                  class="link-info"
+                  target="_blank"
                 >
+                  Seguir Leyendo..
+                </a>
               </p>
             </div>
           </div>
@@ -147,9 +151,9 @@ export default {
         }
       );
       let noticiasAnimeJSON = await noticiasAnime.json();
-      
+
       let datosNoticiaAnime = noticiasAnimeJSON.articles;
-      
+
       if (datosNoticiaAnime[0] != null) {
         this.noticiaAnime1Titular = datosNoticiaAnime[0]["title"];
         this.noticiaAnime1Imagen = datosNoticiaAnime[0]["image_url"];
@@ -189,7 +193,7 @@ export default {
         this.noticiaManga2Descripcion = datosNoticiaManga[5]["intro"];
         this.noticiaManga2Fecha = datosNoticiaManga[5]["date"];
         this.noticiaManga2Url = datosNoticiaManga[5]["url"];
-      } 
+      }
     },
   },
   created: function () {

@@ -1,26 +1,26 @@
 <template>
     <!--Seccion barra Nav -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-            <h2 class="tituloNav">Animes DJK</h2>
-        </a>
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#news">Noticias</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#team">Equipo</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#footer">Pie de pagina</a>
-                </li>
+          </button>
+          <a class="navbar-brand" href="#"><div class="tituloNav">Anime DJK</div></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#news">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#team">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#footer">Pie De Pagina</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 </template>
 
 <script>

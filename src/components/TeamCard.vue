@@ -10,11 +10,12 @@
           />
         </div>
         <div class="card-body">
-          <h5 class="card-title">{{member.nombre}}</h5>
+          <h5 class="card-title">{{member.codigo}}. {{member.nombre}}</h5>
           <p class="card-text">{{member.descripcion}}</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">{{member.rol}}</small>
+          <p><small class="text-muted">{{member.correo}}</small></p>
         </div>
       </div>
     </div>

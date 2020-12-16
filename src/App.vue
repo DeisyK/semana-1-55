@@ -5,7 +5,9 @@
     <header>
     <banner-servicio></banner-servicio>
     </header>
+    <div id="services">
     <seccion-noticias></seccion-noticias>
+    </div>
     <!--Seccion equipo -->
     <div id="team" class="equipo">
       <div>

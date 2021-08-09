@@ -1,29 +1,9 @@
-# pryecto_sprint2
+# semana-1-55
 
-## Project setup
-```
-npm install
-```
+## Proyecto Spring Semana 1 UTP
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Realizado por:
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Deisy Katherine Pineda Araque
+- Jhon Jairo Sanabria Rodriguez
+- Kevin Andres Balcazar Meza
